@@ -69,7 +69,7 @@ class Spectrograph{
       }
       this.edges[i] = blockEdges;
       let Rec = new FilledRectangle(blockEdges[0], this.y1, blockEdges[1], this.y2);
-      Rec.color= color(this.hue, 50, 100);
+      Rec.color= color(this.hue, 66, 100);
       this.blocks.push(Rec);
     }
     this.blocks.sort(this.sortBlocks);
@@ -137,7 +137,7 @@ function setup() {
 }
 
 function draw(){
-  background('#E9DFAC');
+  background('#F0EAD6');
   let specArray = new Array();
   let dy = (canvasHeight-border-spec_height)/N_spec;
   for(let i=0; i<N_spec; i++){

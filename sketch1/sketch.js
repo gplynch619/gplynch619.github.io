@@ -131,7 +131,7 @@ let spec_height=30;
 let maxNEmission = 8;
 let stop = true;
 function setup() {
-  frameRate(0.5);
+  //frameRate(0.5);
   createCanvas(canvasWidth, canvasHeight);
   noLoop();
 }
@@ -152,13 +152,7 @@ function draw(){
 }
 
 function mouseClicked(){
-  if(stop){
-    loop();
-    stop = false;
-  } else {
-    noLoop();
-    stop = true;
-  }
+	redraw()
 }
 
 function pen_line(x1, y1, x2, y2, pd, lw, lcolor){
